@@ -1,0 +1,64 @@
+.sectionSkills {
+	background-color: $quaternaryColor;
+	color: #fff;
+	padding: 60px 0;
+	h1 {
+		text-align: center;
+		margin: 0 auto;
+	}
+	h2 {
+		text-align: center;
+		color: #fff;
+	}
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+		@include respond-to('small') {
+			flex-direction: column;
+		}
+	}
+	.technicalSkills {
+		width: 66%;
+		@include respond-to('small') {
+			width: 100%;
+		}
+	}
+	.designSkills {
+		width: 33%;
+		border-left: 1px solid #444;
+		@include respond-to('small') {
+			width: 100%;
+			border-left: none;
+		}
+	}
+	.skills {
+		display: flex;
+		justify-content: space-around;
+
+		i {
+			font-size: 4rem;
+			transition: .3s all;
+			margin: 20px;
+			color: $primaryColor;
+			@include respond-to('small') {
+				margin: 15px 0;
+			}
+			&:nth-child(2n){
+				color: $tertiaryColor;
+			} 
+		}
+		&:nth-child(2n){
+			i {
+				color: $tertiaryColor;
+				&:nth-child(2n){
+					color: $primaryColor;
+				}
+			}
+		}
+	}
+}
+.blah {
+	fill:white;
+	min-width: 30px;
+	max-width: 30px;
+}

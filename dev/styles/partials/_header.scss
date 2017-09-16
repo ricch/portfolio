@@ -1,0 +1,56 @@
+header {
+	text-align: center;
+	font-family: $primaryFont;
+	background: linear-gradient(rgba(darken($primaryColorRgb,30), .9), rgba($quaternaryColor, .7)), url(../../images/bgToronto.jpg);
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+	
+	.heroHolder {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 75vh;
+		h1 {
+			text-transform: uppercase;
+			font-size: 8rem;
+			line-height: 1;
+			font-weight: 800;
+			letter-spacing: -2px;
+			color: #fff;
+			text-shadow:0 3px 3px rgba(0,0,0,.3);
+			@include respond-to('small') {
+				font-size: 4rem;
+			}
+		}
+		h2 {
+			font-size: 1.8rem;
+			color: #fff;
+			margin: 30px 0;
+			text-transform: uppercase;
+			letter-spacing: 4px;
+			text-shadow:0 2px 2px rgba(0,0,0,.3);
+			@include respond-to('small') {
+				font-size: 1.3rem;
+			}
+			span {
+				border-top: 1px solid rgba(255,255,255,.6);
+				border-bottom: 1px solid rgba(255,255,255,.6);
+				padding: 6px 0;
+			}
+		}
+		.hero {
+			.logo {
+				// max-height: 300px;
+				// background-color: red;
+			}
+		}
+	}
+	.heroTagline {
+		height: 15vh;
+		display: flex;
+		background: #fff;
+		justify-content: center;
+		align-items: center;
+	}
+}

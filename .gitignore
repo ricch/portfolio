@@ -1,0 +1,5 @@
+node_modules/
+public/**/*
+package-lock.json
+fontawesome-5.0.0-beta7-mac/
+working_files/

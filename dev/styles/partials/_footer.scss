@@ -1,0 +1,20 @@
+footer {
+	color: $senaryColor;
+	// padding-top: 40px;
+	.footerTop {
+		background-color: $primaryColor;
+		margin: 0;
+		padding: 20px 0;
+		color: #fff;
+	}
+	.footerMid {
+		background-color: $quinaryColor;
+		margin: 0;
+		padding: 20px 0;
+	}
+	.footerBot {
+		background-color: $quaternaryColor;
+		margin: 0;
+		padding: 20px 0;
+	}
+}

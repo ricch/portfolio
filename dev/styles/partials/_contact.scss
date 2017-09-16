@@ -1,0 +1,13 @@
+.sectionContact {
+	padding: 40px 0;
+	.contactFlex {
+		display: flex;
+		.contactForm, .contactTestimonials {
+			width: calc((100% / 2) - 20px);
+		}
+		.contactForm {
+		}
+		.contactTestimonials {
+		}
+	}
+}

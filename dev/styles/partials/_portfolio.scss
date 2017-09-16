@@ -1,0 +1,101 @@
+.sectionPortfolio {
+	padding: 60px 0;
+	h1 {
+		text-align: center;
+	}
+
+	.portfolioNav {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		@include respond-to('small') { 
+			flex-direction: column;
+		}
+	}
+
+	.portfolio {
+		display: flex;
+		padding: 40px 0;
+		@include respond-to('medium') { 
+		}
+		@include respond-to('small') { 
+			flex-direction: column;
+			padding: 10px;
+		}
+		.portfolioImg {
+			width: 55%;
+			@include respond-to('small') {
+				width: 100%;
+			}
+		}
+		.portfolioDesc{
+			width: 45%;
+			margin-left: 40px;
+			@include respond-to('small') {
+				width: 100%;
+				margin: 0;
+			}
+			h2 {
+				color: $quinaryColor;
+				font-size: 3rem;
+				margin-bottom: 15px;
+			}
+			.porfolioTools {
+				margin-top: 10px;
+				span {
+					margin:0 10px 0 0;
+					padding: 5px 10px;
+					border: 1px solid #ccc;
+					border-radius: 2px;
+					text-transform: uppercase;
+					font-size: 1.2rem;
+					transition: .3s all;
+					&:hover {
+						background-color: #eee;
+					}
+				}
+			}
+			.cta {
+				display: flex;
+				// justify-content: space-around;
+				@include respond-to('small') {
+					flex-direction: column;
+				}
+				button {
+					margin: 25px 10px 0;
+					@include respond-to('small') {
+						margin: 10px auto;
+						width: 60%;
+					}
+				}
+			}
+			.descDetails {
+				display: flex;
+				margin-bottom: 40px;
+				border-bottom: 1px solid #ddd;
+				padding-bottom: 20px;
+				@include respond-to('small') {
+					flex-direction: column;
+					text-align: center;
+				}
+				&:last-of-type {
+					border-bottom: none;
+				}
+				.descIcon {
+					margin-right: 20px;
+				}
+				img {
+					min-width: 30px;
+					color: $primaryColor;
+					max-width: 40px;
+					@include respond-to('small') {
+						margin-bottom: 20px;
+					}
+				}
+				h3 {
+					color: $secondaryColor;
+				}
+			}
+		}
+	}
+}
