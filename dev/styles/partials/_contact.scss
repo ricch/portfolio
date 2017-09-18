@@ -1,13 +1,110 @@
 .sectionContact {
-	padding: 40px 0;
+	// padding: 40px 0;
+	// background-color: $quaternaryColor;
+	background-color: #f4f4f4;
+
+	// background-color: $primaryColor;
+	// color: #fff;
 	.contactFlex {
 		display: flex;
+		@include respond-to('small') {
+			flex-direction: column;
+		}
 		.contactForm, .contactTestimonials {
-			width: calc((100% / 2) - 20px);
+			// width: calc((100% / 2) - 20px);
+			// @include respond-to('small') {
+			// 	width: 100%;
+			// }
 		}
 		.contactForm {
+			width: 70%;
+			min-width: 700px;
+			background-color: #fff;
+			padding: 40px 40px 20px;
+			margin: -30px auto;
+			box-shadow: 0 0 7px rgba(0,0,0,.4);
+			@include respond-to('small') {
+				width: 100%;
+				min-width: auto;
+			}
+			h1 {
+				text-align: center;
+				@include respond-to('small') {
+					font-size: 4rem;
+				}
+			}
+			.contactNameEmail {
+				display: flex;
+				justify-content: space-between;
+				@include respond-to('small') {
+					flex-direction: column;
+				}
+			}
+			input, textarea {
+				width: 100%;
+				padding: 10px;
+				font-size: 1.6rem;
+				appearance: none;
+				border: 1px solid #ddd;
+				margin-top: 10px;
+			}
+			input[type="submit"] {
+				width: auto;
+				appearance: none;
+				border: none;
+				background-color: transparent;
+				color: #fff;
+			}
+			label {
+				font-size: 1.8rem;
+			}
+			.contactName, .contactEmail {
+				width: 48%;
+				margin-top: 30px;
+				@include respond-to('small') {
+					width: 100%;
+				}
+			}
+			.contactMessage {
+				width: 100%;
+				margin-top: 30px;
+			}
+			button {
+				margin: 20px auto 0;
+				display: block;
+				input {
+					padding: 0;
+					margin: 0 10px;
+				}
+			}
+			.contactIcons {
+				margin:30px 0;
+				display: flex;
+				justify-content: space-around;
+				text-align: center;
+				font-size: 1.2rem;
+				@include respond-to('small') {
+					flex-direction: column;
+				}
+				.fal {
+					font-size: 2.4rem;
+					margin-bottom: 15px;
+					transition: .3s all;
+					&:hover {
+						transform: translateY(-5px);
+					}
+					@include respond-to('small') {
+						margin-top: 20px;
+					}
+				}
+			}
 		}
-		.contactTestimonials {
-		}
+		// .contactTestimonials {
+		// 	width: 33.333%;
+		// 	padding: 20px;
+		// 	@include respond-to('small') {
+		// 		width: 100%;
+		// 	}
+		// }
 	}
 }

@@ -1,16 +1,23 @@
 header {
 	text-align: center;
 	font-family: $primaryFont;
-	background: linear-gradient(rgba(darken($primaryColorRgb,30), .9), rgba($quaternaryColor, .7)), url(../../images/bgToronto.jpg);
+	background: linear-gradient(rgba(darken($primaryColorRgb,30), .9), rgba($quaternaryColor, .7)), url(../../images/bgToronto2.jpg);
 	background-size: cover;
 	background-position: center center;
 	height: 100vh;
+	position: relative;
+	@include respond-to('small') {
+		// background-position: left;
+	}
 	
 	.heroHolder {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		height: 75vh;
+		height: 100vh;
+		@include respond-to('small') {
+			height: 100vh;
+		}
 		h1 {
 			text-transform: uppercase;
 			font-size: 8rem;
@@ -40,15 +47,22 @@ header {
 			}
 		}
 		.hero {
+			@include respond-to('small') {
+				margin-top: -10vh;
+			}
 			.logo {
-				// max-height: 300px;
+				max-height: 170px;
 				// background-color: red;
+				margin: 20px auto;
+				@include respond-to('small') {
+					max-height: 200px;
+				}
 			}
 		}
 	}
 	.heroTagline {
 		height: 15vh;
-		display: flex;
+		display: none;
 		background: #fff;
 		justify-content: center;
 		align-items: center;

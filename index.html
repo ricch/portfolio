@@ -9,17 +9,13 @@
 	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
 	
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans:300,400,600,800" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600|Open+Sans:300,400,600,800" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<link type="image/png" href="images/favicon.png" rel="icon">
 	
 	<!-- Animate CSS and Wow JS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-	<script src="public/scripts/wow.min.js"></script>
-		<script>
-		new WOW().init();
-		</script>
-	
+		
 	<!-- Dev Icons -->
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	
@@ -44,19 +40,21 @@
 	</div> -->
 	<nav>
 		<div class="wrapper">
-			<ul>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Skills</a></li>
-				<li><a href="#">Portfolio</a></li>
-				<li><a href="#">Contact</a></li>
+			<input type="checkbox" id="css-toggle-menu" name="css-toggle-menu"> 
+			<ul class="main">
+				<li><a href="javascript:void(0)" onclick="goToByScroll('anchor_about')">About</a></li>
+				<li><a href="javascript:void(0)" onclick="goToByScroll('anchor_skills')">Skills</a></li>
+				<li><a href="javascript:void(0)" onclick="goToByScroll('anchor_portfolio')">Portfolio</a></li>
+				<li><a href="javascript:void(0)" onclick="goToByScroll('anchor_contact')">Contact</a></li>
 			</ul>
+			<label for="css-toggle-menu" id="css-toggle-menu"></label> 
 		</div>
 	</nav>
 	<div class="wrapper heroHolder">
 		<div class="hero">
-			<img class="logo" src="images/logo-RC.png" alt="">
-			<h1>Richard Chin</h1>
-			<h2><span>Front-End Web Developer</span></h2>
+			<img class="logo wow rubberBand" src="images/rc.svg" alt="">
+			<h1 class="wow fadeIn" data-wow-delay=".8s">Richard Chin</h1>
+			<h2 class="wow fadeInUp" data-wow-delay="1.3s"><span>Front-End Web Developer</span></h2>
 		</div>
 	</div>	
 <div class="heroTagline">	
@@ -66,135 +64,148 @@
 </div>
 </header>
 
+<a class="anchor" id="anchor_about" name="anchor_about"></a>
 <main class="sectionAbout">
 	<div class="wrapper about">
-		<div class="aboutPhoto">
+		<!-- <div class="aboutPhoto">
 			<img src="images/richardHeadshot.jpg" alt="">
-		</div>
+		</div> -->
 		<div class="aboutContent">
+			<img class="mobileShow" src="images/richardHeadshot.jpg" alt="">
 			<h1>About</h1>
-			<p>I'm Richard, a front-end developer based in Toronto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus at et enim harum nulla totam esse facilis, autem minus minima blanditiis, aperiam nobis vel architecto sit laborum sed necessitatibus, voluptate sint iure cum quam. Nemo quas iure laudantium, at quasi, autem vel est cupiditate consequuntur dicta, dolore ducimus eum modi!</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit debitis optio, ducimus atque accusamus iure fuga aut, ut architecto temporibus, nam repudiandae aspernatur at nesciunt! Beatae ea officiis expedita neque numquam porro perferendis soluta dolorum ab? Incidunt culpa, deserunt ut..</p>
+			<p>I'm Richard, a Web Designer-turned-Front-End Web Developer based in Toronto. </p>
+			<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus at et enim harum nulla totam esse facilis, autem minus minima blanditiis, aperiam nobis vel architecto sit laborum sed necessitatibus, voluptate sint iure cum quam. Nemo quas iure laudantium, at quasi, autem vel est cupiditate consequuntur dicta, dolore ducimus eum modi!</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nisi, numquam harum! Nemo consectetur reiciendis architecto aliquid, velit adipisci magnam!</p>
-			<p>Blast from the past call to action</p>
+			<p>Blast from the past call to action</p> -->
 			
 			<div class="aboutCTA">
 				<div class="aboutCtaIcons">
-					<a href="https://www.linkedin.com/in/chinrichard/" target="_blank"><i class="fab fa-linkedin"></i></a><a href="https://twitter.com/ricch13" target="_blank"><i class="fab fa-twitter"></i></a><a href="https://www.instagram.com/ricch13/" target="_blank"><i class="fab fa-instagram"></i></a><a href="https://github.com/ricch" target="_blank"><i class="fab fa-github"></i></a>
+					<a href="https://www.linkedin.com/in/chinrichard/" target="_blank"><i class="fab fa-linkedin" alt="Richard Chin's LinkedIn Profile" title="Richard Chin's LinkedIn Profile"></i></a><a href="https://twitter.com/ricch13" target="_blank"><i class="fab fa-twitter" alt="Follow Richard Chin on Twitter" title="Follow Richard Chin on Twitter"></i></a><a href="https://www.instagram.com/ricch13/" target="_blank"><i class="fab fa-instagram" alt="Follow Richard Chin on Instagram" title="Follow Richard Chin on Instagram"></i></a><a href="https://github.com/ricch" target="_blank"><i class="fab fa-github" alt="Follow Richard Chin on Github" title="Follow Richard Chin on Github"></i></a>
 				</div>
 				<div class="aboutCtaGetInTouch">
-					<button class="round">Get in touch</button>
+					<a href="javascript:void(0)" onclick="goToByScroll('anchor_contact')"><button class="round">Get in touch</button></a>
 				</div>
 			</div>
 		</div>
 	</div>		
 </main>
 
+<a class="anchor" id="anchor_skills" name="anchor_skills"></a>
 <section class="sectionSkills">
 	<div class="wrapper">
-		<h1>Skills</h1>
+		<h1>Skills &amp; Tools</h1>
 	</div>
 	<div class="wrapper">
 		<div class="technicalSkills">
-			<h2>Technical</h2>
+			<!-- <h2>Technical</h2> -->
 			<div class="skills">
-				<i class="devicon-css3-plain-wordmark"></i>
-				<i class="devicon-gulp-plain"></i>
-				<i class="devicon-html5-plain-wordmark"></i>
-				<i class="devicon-github-plain-wordmark"></i>
-				<i class="devicon-javascript-plain"></i>
+				<i class="devicon-html5-plain"><br><span>HTML5</span></i>
+				<i class="devicon-css3-plain"><br><span>CSS3</span></i>
+				<i class="devicon-javascript-plain"><br><span>JavaScript</span></i>
+				<i class="devicon-jquery-plain"><br><span>jQuery</span></i>
+				<i class="devicon-sass-original"><br><span>Sass</span></i>
 			</div>
 			<div class="skills">
-				<i class="devicon-jquery-plain-wordmark"></i>
-				<i class="devicon-react-original-wordmark"></i>
-				<i class="devicon-sass-original"></i>
-				<i class="devicon-slack-plain"></i>
-				<i class="devicon-visualstudio-plain"></i>
+				<i class="devicon-babel-plain"><br><span>Babel</span></i>
+				<i class="devicon-gulp-plain"><br><span>Gulp</span></i>
+				<i class="devicon-git-plain"><br><span>Git</span></i>
+				<i class="devicon-github-plain"><br><span>Github</span></i>
+				<i class="devicon-react-original"><br><span>React JS</span></i>
+				<!-- <i class="devicon-slack-plain"><br><span>Slack</span></i>
+				<i class="devicon-visualstudio-plain"><br><span>Visual Studio</span></i> -->
 			</div>
 		</div>
 		<div class="designSkills">
-			<h2>Design</h2>
+			<!-- <h2>Design</h2> -->
 			<div class="skills">
-				<i class="devicon-photoshop-line"></i>
-				<i class="devicon-illustrator-line"></i>
+				<i class="devicon-photoshop-line"><br><span>Photoshop</span></i>
+				<i class="devicon-illustrator-line"><br><span>Illustrator</span></i>
 			</div>
+			<!-- <div class="skills">
+				<i class="devicon-photoshop-line"><br><span>inDesign</span></i>
+				<i class="devicon-illustrator-line"><br><span>Experience Design</span></i>
+			</div> -->
 		</div>
 	</div>
 </section>
 
+<a class="anchor" id="anchor_portfolio" name="anchor_portfolio"></a>
 <section class="sectionPortfolio">
 	<div class="wrapper">
-		<h1>Latest Work</h1>
-		<div class="portfolioNav">
-			<div><img src="images/project1.jpg" alt=""></div>
-			<div><img src="images/project2.jpg" alt=""></div>
-			<div><img src="images/project3.jpg" alt=""></div>
-			<div><img src="images/project4.jpg" alt=""></div>
-			<div><img src="images/project5.jpg" alt=""></div>
+		<h1>Latest <strong>work</strong></h1>
+		<div class="portfolioNav mobileHide">
+			<div><a href="javascript:void(0)" onclick="goToByScroll('anchor_puggle')"><img src="images/projectPuggle.svg" alt="The Puggle Is Real - Dog Walking App" title="The Puggle Is Real - Dog Walking App"><br>The Puggle is Real</a></div>
+			<div><a href="javascript:void(0)" onclick="goToByScroll('anchor_hangman')"><img src="images/projectHangman.svg" alt="HackerYou Hangman" title="HackerYou Hangman"><br>HackerYou Hangman</a></div>
+			<div><a href="javascript:void(0)" onclick="goToByScroll('anchor_subcrawl')"><img src="images/projectSubcrawl.svg" alt="Subcrawl App" title="Subcrawl App"><br>Subcrawl</a></div>
+			<!-- <div><img src="images/project4.jpg" alt=""><br>The Book Is Always Better</div> -->
 		</div>
 	</div>
 	<div class="wrapper portfolio">
+		<a class="anchor" id="anchor_puggle" name="anchor_puggle"></a>
 		<div class="portfolioImg wow fadeInLeft"  data-wow-delay=".2s">
-			<img src="images/portfolio1.jpg" alt="">
+			<img src="images/portfolioPuggle.png" alt="The Puggle Is Real - React JS Web App" title="The Puggle Is Real - React JS Web App">
 		</div>
 		<div class="portfolioDesc">
 			<div>
 				<h2>The Puggle is Real</h2>
-				<h3>Subtitle</h3>
+				<h3>React JS, Firebase, Google Maps API, HTML5, CSS3, Sass</h3>
 			</div>
 			<div>
-				<p>This dog walking app helps dog owners who are busy in their day-to-day lives find trustworthy and responsible dog walkers in their local vicinity to care for their 4 legged family members. </p>
+				<p>This dog walking app helps dog owners busy with their day-to-day lives find trustworthy and responsible dog walkers in their area. </p>
+				<p>Built with React JS, users can either signup as a 'walker' or an 'owner'. Inputted data and media is stored into Firebase where it can be later retrieved for display. Utilizing the Google Maps API, markers are added to pinpoint the locations of all users (owners and walkers) in the local vicinity.</p>
 			</div>
-
-			<div>
-				<h4>Tools:</h4>
-				<div class="porfolioTools"><span>sass</span><span>html5</span><span>javascript</span><span>react js</span><span>gulp</span><span>firebase</span></div>
-				<!-- <p>
-					<i class="devicon-css3-plain-wordmark"></i>
-					<i class="devicon-gulp-plain"></i>
-					<i class="devicon-html5-plain-wordmark"></i>
-					<i class="devicon-github-plain-wordmark"></i>
-					<i class="devicon-javascript-plain"></i>
-					<i class="devicon-react-original-wordmark"></i>
-					<i class="devicon-sass-original"></i>
-				</p> -->
-			</div>
-			<div class="cta">
-				<button class="round">View on GitHub</button>
-				<button class="round">View LIVE</button>
-			</div>
-			<!-- <div class="descDetails">
-				<div class="descIcon">
-					<i class="fal fa-flask"></i>
-				</div>
-				<div>
-					<h3>Custom Web Design</h3>	
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima qui asperiores aspernatur laudantium neque. Pariatur tempore commodi ipsam deleniti aperiam!</p>
-				</div>
+			<!-- <div class="tools">
+				<div class="porfolioTools"><span>sass</span><span>html5</span><span>javascript</span><span>react js</span><span>gulp</span><span>firebase</span><span>google maps api</span></div>
 			</div> -->
-			
+			<div class="cta">
+				<a href="https://github.com/ricch/Dog-Walker" target="_blank"><button class="round">View on GitHub</button></a>
+				<a href="https://the-puggle-is-real.firebaseapp.com/" target="_blank"><button class="round">View LIVE</button></a>
+			</div>
 		</div>
-
-
-	</div>	
+	</div>
 	<div class="wrapper portfolio">
+		<a class="anchor" id="anchor_subcrawl" name="anchor_subcrawl"></a>
 		<div class="portfolioImg wow fadeInRight" data-wow-delay=".2s">
-			<img src="images/portfolio1.jpg" alt="">
+			<img src="images/portfolioSubcrawl.png" alt="Sub Crawl - Interactive Web App that finds all the bars closest to your subway stops" title="Sub Crawl - Interactive Web App that finds all the bars closest to your subway stops">
 		</div>
 		<div class="portfolioDesc">
 			<div>
 				<h2>Sub Crawl</h2>
-				<h3>Subtitle</h3>
+				<h3>JavaScript, jQuery, HTML5, CSS3, Sass, Yelp API</h3>  
 			</div>
 			<div>
-				<p>This dog walking app helps dog owners who are busy in their day-to-day lives find trustworthy and responsible dog walkers in their local vicinity to care for their 4 legged family members. </p>
+				<p>Long day at work / school? Need a drink on your commute home? How about eight?</p>
+				<p>This interactive web app uses JavaScript and jQuery to communicate with the Yelp API to grab the closest bars to all the TTC station stops on your route home.</p>
+				<p><em>* Please drink responsibly. Don't forget to buy a TTC day pass or use your Presto card, otherwise it'll be a 'hella' expensive commute.</em></p>
 			</div>
-			<div>
-				<h4>Tools:</h4>
-				<p class="porfolioTools"><span>sass</span><span>html5</span><span>javascript</span><span>react js</span><span>gulp</span><span>firebase</span></p>
-			</div>
+			<!-- <div class="tools">
+				<p class="porfolioTools"><span>sass</span><span>html5</span><span>javascript</span><span>Yelp API</span><span>gulp</span></p>
+			</div> -->
 			<div class="cta">
-				<button class="round">View on GitHub</button>
+				<a href="https://github.com/ricch/SubCrawl" target="_blank"><button class="round">View on GitHub</button></a>
+				<a href="https://ricch.github.io/SubCrawl/" target="_blank"><button class="round">View LIVE</button></a>
+			</div>			
+		</div>
+	</div>
+	<div class="wrapper portfolio">
+		<a class="anchor" id="anchor_hangman" name="anchor_hangman"></a>
+		<div class="portfolioImg wow fadeInLeft" data-wow-delay=".2s">
+			<img src="images/portfolioHangman.png" alt="HackerYou Hangman - JavaScript & jQuery Game" title="HackerYou Hangman - JavaScript & jQuery Game">
+		</div>
+		<div class="portfolioDesc">
+			<div>
+				<h2>HackerYou Hangman</h2>
+				<h3>Javascript, jQuery, HTML5, CSS3, Sass</h3>
+			</div>
+			<div>
+				<p>An oldie but a goodie. Your traditional Hangman game but with HackerYou Staff (and pups!)</p>
+				<p>With a week's knowledge of learning JavaScript, Matthew Paris and I threw everything we knew about JS <em>(arrays, math.random, splits, lengths, for-loops, append, index-ofs, etc)</em> to create this fun game.</p>
+			</div>
+			<!-- <div class="tools">
+				<p class="porfolioTools"><span>sass</span><span>html5</span><span>javascript</span><span>Yelp API</span><span>gulp</span></p>
+			</div> -->
+			<div class="cta">
+				<a href="https://github.com/ricch/HackerYouHangman" target="_blank"><button class="round">View on GitHub</button></a>
 				<button class="round">View LIVE</button>
 			</div>			
 		</div>
@@ -203,12 +214,12 @@
 
 <section class="sectionFunFacts">
 	<div class="wrapper">
-		<h1>Fun Facts</h1>
+		<h1>Fun <strong>facts</strong></h1>
 		<div class="funFacts">
 			<div class="fact wow fadeInUp">
 				<i class="fal fa-camera-retro"></i>
 				<h3>Photography<br>Enthusiast</h3>
-				<p>Everything I need for life's adventures:<br>- Nikon d7100<br>- GoPro<br>- DJI Mavic Pro</p>
+				<p>Everything I need for life's adventures:<br>&bull; Nikon d7100 &bull;<br>&bull; GoPro &bull;<br>&bull; DJI Mavic Pro &bull;</p>
 			</div>
 			<div class="fact wow fadeInUp" data-wow-delay=".1s">
 				<i class="fal fa-paw"></i>
@@ -232,19 +243,41 @@
 			<div class="fact wow fadeInUp" data-wow-delay=".4s">
 				<i class="fal fa-heart"></i>
 				<h3>Hockey<br>Fan</h3>
-				<p>I bleed Blue and White ever since the Potvin era > Cujo era > Eagle era .. we'll skip everything in between and now the Freddy era.</p>
+				<p>I've been bleeding blue and white ever since the Potvin era > Cujo era > Eagle era .. we'll skip everything in between .. and now the Freddy era.</p>
 			</div>
 		</div>
 	</div>
 </section>
 
+<a class="anchor" id="anchor_contact" name="anchor_contact"></a>
 <section class="sectionContact">
 	<div class="wrapper">
-		<h1>Get In Touch</h1>
 		<div class="contactFlex">
 			<div class="contactForm">
-				<h2>Contact Form Goes here</h2>
-				<form action="#">
+				<h1>Get <strong>in touch</strong></h1>
+				<form action="https://formspree.io/hello@richardchin.ca" method="POST">
+					<div class="contactNameEmail">
+						<div class="contactName">
+							<label for="name">Name *</label><br>
+							<input type="text" name="name" id="name">
+						</div>
+						<div class="contactEmail">
+							<label for="name">Email *</label><br>
+							<input type="email" name="_replyto" id="email">
+						</div>
+					</div>
+					<div class="contactMessage">
+						<label for="message">Message *</label><br>
+						<textarea name="specialInstructions" cols="30" rows="4" name="message" id="message"></textarea>
+					</div>
+					<button class="round"><input type="submit" value="Send"></button>
+				</form>
+				<div class="contactIcons">
+					<div><i class="fal fa-phone"></i><br>(416) 569-9833</div>
+					<div><a href="mailto:hello@richardchin.ca"><i class="fal fa-envelope"></i><Br>hello@richardchin.ca</a></div>
+					<div><i class="fal fa-map-marker-alt"></i><br>Markham, ON</div>
+				</div>
+				<!-- <form action="#">
 				  <div class="mdl-textfield mdl-js-textfield">
 				    <input class="mdl-textfield__input" type="text" id="name">
 				    <label class="mdl-textfield__label" for="name">Name *</label>
@@ -258,32 +291,56 @@
 				    <label class="mdl-textfield__label" for="whatevertext">Message</label>
 				  </div>
 				  <input type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-				</form>
+				</form> -->
 			</div>
-			<div class="contactTestimonials">
+			<!-- <div class="contactTestimonials">
 				<h2>Testimonials Go here</h2>
-			</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, nulla ad maxime. Deserunt, facere nam soluta odio modi aspernatur temporibus eius laboriosam ipsum, dolore, debitis similique saepe ex, enim earum ea est consequuntur recusandae suscipit. Dolor, nihil! Quia atque officiis vero placeat doloremque recusandae repellat fugit repudiandae excepturi! Omnis, alias.</p>
+			</div> -->
 		</div>
 	</div>
 </section>
 
 <footer>
-	<div class="footerTop">
+	<!-- <div class="footerTop">
 		<div class="wrapper">
 			Footer Top Goes Here
 		</div>
-	</div>
+	</div> -->
 	<div class="footerMid">
 		<div class="wrapper">
-			Footer Top Goes Here
+			<p>&copy; 2017 Richard Chin. All Rights Reserved.<br>
+			Toronto skyline photo by <!-- <a href="https://unsplash.com/@fiveamstories" target="_blank">Alex Shutin</a> or  --><a href="https://unsplash.com/@yourturn" target="_blank">Illia Cherednychenko</a></p>
 		</div>
 	</div>
-	<div class="footerBot">
+	<!-- <div class="footerBot">
 		<div class="wrapper">
-			<p>Footer Bot Goes Here</p>
+			<p>&copy; 2017 Richard Chin. All Rights Reserved.</p>
+			<p>Toronto skyline photo by <a href="https://unsplash.com/@fiveamstories" target="_blank">Alex Shutin</a> or <a href="https://unsplash.com/@yourturn" target="_blank">Illia Cherednychenko</a></p>
 		</div>
-	</div>
+	</div> -->
 </footer>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="public/scripts/wow.min.js"></script>
+		<script>
+		new WOW().init();
+	</script>
+
+	<!-- <script src="public/scripts/typed.min.js"></script>
+	<script>
+	  var typed = new Typed('.element', {
+	  	stringsElement: '#typed-strings',
+	    // strings: ["First sentence.", "Second sentence."],
+	    typeSpeed: 50,
+	    loop: true
+	  });
+	</script> -->
+
+	<script>
+		function goToByScroll(id){
+			jQuery('html,body').animate({scrollTop: jQuery("#"+id).offset().top - 100},'slow');
+		}
+	</script>
+
 </body>
 </html>

@@ -1,10 +1,12 @@
 .sectionSkills {
 	background-color: $quaternaryColor;
+	background-image: url('../../images/bgPortfolio.jpg');
+	background-size: cover;
 	color: #fff;
 	padding: 60px 0;
 	h1 {
 		text-align: center;
-		margin: 0 auto;
+		margin: 0 auto 40px;
 	}
 	h2 {
 		text-align: center;
@@ -40,12 +42,21 @@
 			transition: .3s all;
 			margin: 20px;
 			color: $primaryColor;
+			text-align: center;
+			width: 25%;
 			@include respond-to('small') {
 				margin: 15px 0;
 			}
 			&:nth-child(2n){
 				color: $tertiaryColor;
 			} 
+			span {
+				font-size: 1.4rem;
+				font-family: $primaryFont;
+				text-align: center;
+				margin: 10px auto;
+				display: block;
+			}
 		}
 		&:nth-child(2n){
 			i {

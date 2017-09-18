@@ -1,20 +1,31 @@
 footer {
 	color: $senaryColor;
 	// padding-top: 40px;
-	.footerTop {
-		background-color: $primaryColor;
-		margin: 0;
-		padding: 20px 0;
-		color: #fff;
-	}
+	// .footerTop {
+	// 	background-color: $primaryColor;
+	// 	margin: 0;
+	// 	padding: 20px 0;
+	// 	color: #fff;
+	// }
 	.footerMid {
+		border-top: 5px solid $primaryColor;
 		background-color: $quinaryColor;
 		margin: 0;
-		padding: 20px 0;
+		padding: 40px 0 20px;
+		p {
+			font-size: 1.2rem;
+			text-align: center;
+		}
+		@include respond-to('small') {
+			padding-bottom: 60px;
+		}
 	}
 	.footerBot {
 		background-color: $quaternaryColor;
 		margin: 0;
 		padding: 20px 0;
+		p {
+			font-size: 1.2rem;
+		}
 	}
 }
