@@ -84,7 +84,7 @@
 				text-align: center;
 				font-size: 1.2rem;
 				@include respond-to('small') {
-					flex-direction: column;
+					// flex-direction: column;
 				}
 				.fal {
 					font-size: 2.4rem;
@@ -95,6 +95,15 @@
 					}
 					@include respond-to('small') {
 						margin-top: 20px;
+						color: #fff;
+						background-color: $primaryColor;
+						border-radius: 50%;
+						padding: 10px;
+					}
+				}
+				div {
+					@include respond-to('medium') {
+						width: 50%;
 					}
 				}
 			}

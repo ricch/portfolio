@@ -30,7 +30,25 @@
 	}
 }
 
+.scrolled-head {
+	height: 50px;
+}
 nav {
+	.logoPlaceholder {
+			@include respond-to('large') {
+				transition: .3s all;
+				&:before {
+					// content:url('../../images/rc.svg');
+					// display: block;
+					// width: 55px;
+					content: "Richard Chin";
+			}
+		}
+		// img {
+		// 	height: 40px;
+		// 	transition: .3s all;
+		// }
+	}
 	// height:10vh;
 	height: 100px;
 	// background: linear-gradient(rgba(darken($quaternaryColorRgb,30), .9), rgba($quaternaryColorRgb, .9));
@@ -38,6 +56,7 @@ nav {
 	position: fixed;
 	width: 100%;
 	z-index: 10;
+	transition: .3s all;
 	@include respond-to('small') {
 		bottom: 0;
 		height: 50px;
@@ -50,7 +69,15 @@ nav {
 		@include respond-to('large') {
 			display: flex;
 			align-items: center;
-			justify-content: flex-end;
+			// justify-content: flex-end;
+			justify-content: space-between;
+		}
+		.logoPlaceholder {
+			font-family: $secondaryFont;
+			text-transform: uppercase;
+			font-weight: 600;
+			font-size: 2rem;
+			color: #fff;
 		}
 	}
 	ul {

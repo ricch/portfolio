@@ -30,9 +30,11 @@
 <body>
 
 <header>
-
 	<nav>
 		<div class="wrapper">
+			<div class="navWrapper">
+				<!-- <img src="images/rc.svg" alt=""> Richard Chin -->
+			</div>
 			<input type="checkbox" id="css-toggle-menu" name="css-toggle-menu"> 
 			<ul class="main">
 				<li><a href="javascript:void(0)" onclick="goToByScroll('anchor_about')">About</a></li>
@@ -50,11 +52,6 @@
 			<h2 class="wow fadeInUp" data-wow-delay="1.3s"><span>Front-End Web Developer</span></h2>
 		</div>
 	</div>	
-<div class="heroTagline">	
-	<div class="wrapper">
-		<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, laboriosam?</h2>
-	</div>
-</div>
 </header>
 
 <a class="anchor" id="anchor_about" name="anchor_about"></a>
@@ -64,7 +61,10 @@
 		<div class="aboutContent">
 			<img class="mobileShow" src="images/richardHeadshot.jpg" alt="">
 			<h1>About</h1>
-			<p>I'm Richard, a Web Designer-turned-Front-End Web Developer based in Toronto. </p>
+			<p>Hi, I'm Richard, a front-end web developer and graphic designer based in Toronto, Ontario. I enjoy creating interactive websites / apps written with clean, DRY code and designed with pixel perfection.
+			<p>Prior to becoming a web developer at <a href="http://www.hackeryou.com" target="_blank">HackerYou</a>, I was a Marketing Design Lead at <a href="http://www.jonasclub.com" target="_blank">Jonas Club Software</a> where I collaborated with multiple departments to establish new ways to communicate with clients, develop relationships, reinforce brand image and drive sales revenue.</p>
+			<!-- <p>I was responsible for the design, development and execution of deliverables including email marketing campaigns, print advertisements, tradeshow displays and corporate websites.</p> -->
+			<p>When I'm not near a computer, I'm most likely out on an adventure with our puppy Harley <em>(She takes up all my free time now)</em>.</p>
 
 			
 			<div class="aboutCTA">
@@ -82,7 +82,7 @@
 <a class="anchor" id="anchor_skills" name="anchor_skills"></a>
 <section class="sectionSkills">
 	<div class="wrapper">
-		<h1>Skills &amp; Tools</h1>
+		<h1>Skills &amp; <strong>Tools</strong></h1>
 	</div>
 	<div class="wrapper">
 		<div class="technicalSkills">
@@ -92,17 +92,18 @@
 				<i class="skillsIndiv devicon-javascript-plain"><br><span>JavaScript</span></i>
 				<i class="skillsIndiv devicon-jquery-plain"><br><span>jQuery</span></i>
 				<i class="skillsIndiv devicon-sass-original"><br><span>Sass</span></i>
-				<i class="skillsIndiv fal fa-arrows-alt-h"><br><span>Responsive</span></i>
 			</div>
 			<div class="skills">
-				<i class="skillsIndiv devicon-babel-plain"><br><span>Babel</span></i>
 				<i class="skillsIndiv devicon-gulp-plain"><br><span>Gulp</span></i>
-				<i class="skillsIndiv devicon-git-plain"><br><span>Git</span></i>
 				<i class="skillsIndiv devicon-github-plain"><br><span>Github</span></i>
 				<i class="skillsIndiv devicon-react-original"><br><span>React JS</span></i>
 				<div class="skillsIndiv">
 					<img src="images/logoFirebase.svg" alt=""><br>
 					<span class="textFirebase">Firebase</span>
+				</div>
+				<div class="skillsIndiv kentico">
+					<img src="images/logoKentico.svg" alt=""><br>
+					<span class="textKentico">Kentico CMS</span>
 				</div>
 			</div>
 		</div>
@@ -130,11 +131,11 @@
 <section class="sectionPortfolio">
 	<div class="wrapper">
 		<h1>Latest <strong>work</strong></h1>
-		<div class="portfolioNav mobileHide">
+		<!-- <div class="portfolioNav mobileHide">
 			<div class="portfolioNavItem"><a href="javascript:void(0)" onclick="goToByScroll('anchor_puggle')"><img src="images/projectPuggle.svg" alt="The Puggle Is Real - Dog Walking App" title="The Puggle Is Real - Dog Walking App"><br><span class="portfolioNavTitle">The Puggle is Real</span></a></div>
 			<div class="portfolioNavItem"><a href="javascript:void(0)" onclick="goToByScroll('anchor_subcrawl')"><img src="images/projectSubcrawl.svg" alt="Subcrawl App" title="Subcrawl App"><br><span class="portfolioNavTitle">Subcrawl</span></a></div>
 			<div class="portfolioNavItem"><a href="javascript:void(0)" onclick="goToByScroll('anchor_hangman')"><img src="images/projectHangman.svg" alt="HackerYou Hangman" title="HackerYou Hangman"><br><span class="portfolioNavTitle">HackerYou Hangman</span></a></div>
-		</div>
+		</div> -->
 	</div>
 	<div class="wrapper portfolio">
 		<a class="anchor" id="anchor_puggle" name="anchor_puggle"></a>
@@ -148,14 +149,14 @@
 			</div>
 			<div>
 				<p>This dog walking app helps dog owners busy with their day-to-day lives find trustworthy and responsible dog walkers in their area. </p>
-				<p>Built with React JS, users can either signup as a 'walker' or an 'owner'. Inputted data and media is stored into Firebase where it can be later retrieved for display. Utilizing the Google Maps API, markers are added to pinpoint the locations of all users (owners and walkers) in the local vicinity.</p>
+				<p>Built with React JS, users can either signup as a 'walker' or an 'owner'. Inputted data and media is stored into Firebase where it is later called for display. Utilizing the Google Maps API, markers are added to pinpoint the locations of all users in the local vicinity.</p>
 			</div>
 			<!-- <div class="tools">
 				<div class="porfolioTools"><span>sass</span><span>html5</span><span>javascript</span><span>react js</span><span>gulp</span><span>firebase</span><span>google maps api</span></div>
 			</div> -->
 			<div class="cta">
 				<a href="https://github.com/ricch/Dog-Walker" target="_blank"><button class="round">View on GitHub</button></a>
-				<a href="https://the-puggle-is-real.firebaseapp.com/" target="_blank"><button class="round">View LIVE</button></a>
+				<a href="https://the-puggle-is-real.firebaseapp.com/" target="_blank"><button class="round">View LIVE on Firebase</button></a>
 			</div>
 		</div>
 	</div>
@@ -193,7 +194,7 @@
 			</div>
 			<div>
 				<p>An oldie but a goodie &mdash; your traditional Hangman game but with HackerYou Staff (and pups!)</p>
-				<p>With a week's knowledge of learning JavaScript, Matthew Parris and I threw everything we knew about JS <em>(arrays, math.random, splits, lengths, for-loops, append, index-ofs, etc)</em> to create this fun game.</p>
+				<p>With a week's knowledge of learning JavaScript, <a href="http://www.matthewjparris.com/" target="_blank">Matthew Parris</a> and I threw everything we knew about JS <em>(arrays, math.randoms, splits, lengths, for-loops, appends, index-ofs, etc)</em> to create this fun game.</p>
 			</div>
 
 			<div class="cta">
@@ -211,21 +212,31 @@
 			<div class="fact wow fadeInUp">
 				<i class="fal fa-camera-retro"></i>
 				<h3>Photography<br>Enthusiast</h3>
-				<p>Everything I need for life's adventures:<br>&bull; Nikon d7100 &bull;<br>&bull; GoPro &bull;<br>&bull; DJI Mavic Pro &bull;</p>
+				<p>Everything I need for life's adventures:<br>
+				&bull; Nikon d7100<br>
+				&bull; GoPro<br>
+				&bull; DJI Mavic Pro</p>
 			</div>
 			<div class="fact wow fadeInUp" data-wow-delay=".1s">
 				<i class="fal fa-paw"></i>
 				<h3>Dog<br>Lover</h3>
-				<p>Recently expanded our family to include Harley, our mixed puppy: <br>&bull; Rottweiler &bull;<br>&bull; Husky &bull;<br>&bull; German Shepherd &bull;<br>&bull; Australian Shepherd &bull;</p>
+				<p>Recently expanded our family to include Harley, our mixed puppy: <br>
+				&bull; Rottweiler<br>
+				&bull; Husky<br>
+				&bull; German Shepherd<br>
+				&bull; Australian Shepherd</p>
 			</div>
 			<div class="fact wow fadeInUp" data-wow-delay=".2s">
 				<i class="fal fa-plane"></i>
 				<h3>Frequent<br>Flyer Miles</h3>
-				<p>&bull; 2017 &bull;<br>Joshua Tree, Sequoia, Kings Canyon, Yosemite<br>
-				&bull; 2016 &bull;<Br>Road trip to Nova Scotia, New Brunswick, PEI.<br>
-				E. Caribbean Cruise.<br>
-				&bull; 2015 &bull;<br>London &amp; Scotland.<br>
-				Grand Canyon, Antelope Canyon, Monument Valley, Bryce Canyon, Zion.</p>
+				<p><strong>2017:</strong><br>
+				&bull; Joshua Tree, Sequoia, Kings Canyon, Yosemite<br>
+				<strong>2016:</strong><Br>
+				&bull; Road trip to Nova Scotia, New Brunswick, PEI.<br>
+				&bull; E. Caribbean Cruise.<br>
+				<strong>2015:</strong><br>
+				&bull; London &amp; Scotland.<br>
+				&bull; Grand Canyon, Antelope Canyon, Monument Valley, Bryce Canyon, Zion.</p>
 			</div>
 			<div class="fact wow fadeInUp" data-wow-delay=".3s">
 				<i class="fal fa-utensils-alt"></i>
@@ -247,20 +258,20 @@
 		<div class="contactFlex">
 			<div class="contactForm">
 				<h1>Get <strong>in touch</strong></h1>
-				<form action="https://formspree.io/hello@richardchin.ca" method="POST">
+				<form action="https://formspree.io/hello@richardchin.ca" method="POST" target="_blank">
 					<div class="contactNameEmail">
 						<div class="contactName">
 							<label for="name">Name *</label><br>
-							<input type="text" name="name" id="name">
+							<input type="text" name="name" id="name" required="true">
 						</div>
 						<div class="contactEmail">
 							<label for="name">Email *</label><br>
-							<input type="email" name="_replyto" id="email">
+							<input type="email" name="_replyto" id="email" required="true">
 						</div>
 					</div>
 					<div class="contactMessage">
 						<label for="message">Message *</label><br>
-						<textarea cols="30" rows="4" name="message" id="message"></textarea>
+						<textarea cols="30" rows="4" name="message" id="message" required="true"></textarea>
 					</div>
 					<button class="round"><input type="submit" value="Send"></button>
 				</form>
@@ -268,7 +279,7 @@
 					<div class="mobileShow"><a href="tel:+4165699833"><i class="fal fa-phone"></i><br>(416) 569-9833</a></div>
 					<div class="mobileHide"><i class="fal fa-phone"></i><br>(416) 569-9833</div>
 					<div><a href="mailto:hello@richardchin.ca"><i class="fal fa-envelope"></i><Br>hello@richardchin.ca</a></div>
-					<div><i class="fal fa-map-marker-alt"></i><br>Markham, ON</div>
+					<div class="mobileHide"><i class="fal fa-map-marker-alt"></i><br>Markham, ON</div>
 				</div>
 
 			</div>
@@ -293,11 +304,14 @@
 	</div>
 </footer>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	
+	<!-- Wow JS -->
 	<script src="public/scripts/wow.min.js"></script>
 		<script>
 		new WOW().init();
 	</script>
 
+	<!-- goToByScroll -->
 	<script>
 		function goToByScroll(id){
 			jQuery('html,body').animate({scrollTop: jQuery("#"+id).offset().top - 100},'slow');
@@ -313,6 +327,22 @@
 
 	  gtag('config', 'UA-103596796-1');
 	</script>
+
+	<!-- Scrolled Head -->
+	<script>
+	$(function(){
+		$(window).scroll(function(){
+			if($("nav").offset().top > 700){
+				$('nav').addClass("scrolled-head");
+				$('.navWrapper').addClass("logoPlaceholder");
+			}else{
+				$('nav').removeClass("scrolled-head")
+				$('.navWrapper').removeClass("logoPlaceholder");
+			}
+		});
+	});
+	</script>
+
 
 
 </body>

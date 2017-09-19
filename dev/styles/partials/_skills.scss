@@ -7,6 +7,10 @@
 	h1 {
 		text-align: center;
 		margin: 0 auto 40px;
+		color: #bbb;
+		strong {
+			color: #fff;
+		}
 	}
 	h2 {
 		text-align: center;
@@ -21,32 +25,46 @@
 	}
 	.technicalSkills {
 		width: 66%;
+		color: $primaryColor;
 		@include respond-to('medium') {
 			width: 100%;
 		}
+		.kentico {
+			img {
+				max-width: 45px;
+			}
+		}
 		img {
 			max-width: 30px;
-
 			@include respond-to('small') {
 				max-height: 31px;
 			}
 		}
-		.textFirebase {
+		.textFirebase, .textKentico {
 			font-size: 1.4rem;
-			color: $primaryColor;
-			margin: 10px auto;
 			display: block;
 			@include respond-to('small') {
 				font-size: 1rem;
 			}
 		}
+		.textFirebase {
+			margin: 9px auto;
+		}
+		.textKentico {
+			margin: 6px auto;
+		}
 	}
 	.designSkills {
-		width: 33%;
-		border-left: 1px solid #444;
+		width: 30%;
+		padding-left: 4%;
+		border-left: 1px solid rgba(255,255,255,.3);
+		color: $tertiaryColor;
 		@include respond-to('medium') {
 			width: 100%;
 			border-left: none;
+			padding-left: 0;
+			border-top: 1px solid rgba(255,255,255,.2);
+			padding-top: 10px;
 		}
 		img {
 			max-height: 38px;
@@ -55,7 +73,6 @@
 			font-size: 1.4rem; 
 			display: block;
 			margin: 10px auto;
-			color: $tertiaryColor;
 			@include respond-to('small') {
 				font-size: 1rem;
 			}
@@ -67,28 +84,22 @@
 		@include respond-to('large') {
 			flex-wrap: wrap;
 		}
-
 		div {
 			width: 50%;
 			text-align: center;
 			margin: 19px 0;
 		}
 		.skillsIndiv {
-			width: calc(100% / 6);
+			width: calc(100% / 5);
 		}
 		i {
 			font-size: 4rem;
 			transition: .3s all;
 			margin: 20px 0;
-			color: $primaryColor;
 			text-align: center;
-			// width: 25%;
 			@include respond-to('small') {
 				margin: 15px 0;
 			}
-			&:nth-child(2n){
-				color: $tertiaryColor;
-			} 
 			span {
 				font-size: 1.4rem;
 				font-family: $primaryFont;
@@ -97,14 +108,6 @@
 				display: block;
 				@include respond-to('small') {
 					font-size: 1rem;
-				}
-			}
-		}
-		&:nth-child(2n){
-			i {
-				color: $tertiaryColor;
-				&:nth-child(2n){
-					color: $primaryColor;
 				}
 			}
 		}

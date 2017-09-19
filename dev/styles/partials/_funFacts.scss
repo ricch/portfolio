@@ -43,6 +43,7 @@
 				font-size: 1.4rem;
 				line-height: 1.4;
 				color: #999;
+				text-align: left;
 			}
 			.fal {
 				font-size: 3rem;
@@ -50,6 +51,15 @@
 				transition: .3s all;
 				&:hover {
 					transform: translateY(-5px)
+				}
+			}
+			strong {
+				color: #eee;
+				font-weight: 600;
+				padding-top: 8px;
+				display: inline-block;
+				&:first-child {
+					padding-top: 0;
 				}
 			}
 		}
