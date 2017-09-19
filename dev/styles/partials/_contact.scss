@@ -23,7 +23,7 @@
 			padding: 40px 40px 20px;
 			margin: -30px auto;
 			box-shadow: 0 0 7px rgba(0,0,0,.4);
-			@include respond-to('small') {
+			@include respond-to('medium') {
 				width: 100%;
 				min-width: auto;
 			}

@@ -14,18 +14,32 @@ footer {
 		padding: 40px 0 20px;
 		p {
 			font-size: 1.2rem;
-			text-align: center;
+			text-align: left;
+			@include respond-to('medium') {
+				text-align: center;
+			}
 		}
 		@include respond-to('small') {
 			padding-bottom: 60px;
 		}
-	}
-	.footerBot {
-		background-color: $quaternaryColor;
-		margin: 0;
-		padding: 20px 0;
-		p {
-			font-size: 1.2rem;
+		.wrapper {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			@include respond-to('medium') {
+				flex-direction: column;
+			}
+			.fab {
+				margin: 0 20px;
+				font-size: 2.4rem;
+				transition: .3s all;
+				color: #888;
+				&:hover {
+					color: $primaryColor;
+					cursor: pointer;
+				}
+			}
 		}
 	}
+
 }

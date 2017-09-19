@@ -17,11 +17,18 @@
 		@include respond-to('small') {
 			flex-direction: column;
 		}
+		@include respond-to('medium') {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
 		.fact {
 			width: 20%;
 			text-align: center;
 			padding: 10px;
 			margin: 0 10px;
+			@include respond-to('medium') {
+				width:40%;
+			}
 			@include respond-to('small') {
 				width: 100%;
 				margin: 0;
