@@ -8,6 +8,8 @@ button {
 	transition: .3s all;
 	&:hover {
 		background-color: lighten($primaryColor,10);
+		box-shadow: 0 2px 9px rgba(0,0,0,.5);
+		transform: translateY(-2px); 
 	}
 	&.round {
 		border-radius: 30px;

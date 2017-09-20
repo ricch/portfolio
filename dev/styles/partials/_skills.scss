@@ -25,7 +25,7 @@
 	}
 	.technicalSkills {
 		width: 66%;
-		color: $primaryColor;
+		color: lighten($primaryColor,5);
 		@include respond-to('medium') {
 			width: 100%;
 		}
