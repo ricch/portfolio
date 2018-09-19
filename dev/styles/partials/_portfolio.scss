@@ -126,23 +126,6 @@
 					}
 				}
 			}
-			.cta {
-				display: flex;
-				// justify-content: space-around;
-				@include respond-to('medium') {
-					flex-direction: column;
-				}
-				button {
-					margin: 25px 10px 0;
-					@include respond-to('medium') {
-						margin: 10px auto;
-						width: 60%;
-					}
-				}
-				a {
-					text-align: center;
-				}
-			}
 			.descDetails {
 				display: flex;
 				margin-bottom: 40px;

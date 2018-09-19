@@ -51,6 +51,12 @@ button {}
 .wrapper {
 	max-width: 1170px;
 	margin: 0 auto;
+	@include respond-to('large') {
+		max-width: 960px;
+	}
+	@include respond-to('medium') {
+		max-width: 640px;
+	}
 	@include respond-to('small') {
 		padding: 0 10px;
 	}
@@ -75,4 +81,28 @@ button {}
 
 .flex {
 	display: flex;
+}
+
+.linethrough {
+	text-decoration: line-through;
+	font-style: italic;
+	color: #999;;
+}
+
+.cta {
+	display: flex;
+	// justify-content: space-around;
+	@include respond-to('medium') {
+		flex-direction: column;
+	}
+	button {
+		margin: 25px 10px 0;
+		@include respond-to('medium') {
+			margin: 10px auto;
+			width: 60%;
+		}
+	}
+	a {
+		text-align: center;
+	}
 }

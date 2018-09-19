@@ -4,11 +4,6 @@
 	<meta charset="UTF-8">
 	<title>Richard Chin - Front End Web Developer</title>
 
-	<!-- Google Material Design -->
-	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-
-	
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600|Open+Sans:300,400,600,800" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<link type="image/png" href="images/favicon.png" rel="icon">
@@ -33,7 +28,6 @@
 	<nav>
 		<div class="wrapper">
 			<div class="navWrapper">
-				<!-- <img src="images/rc.svg" alt=""> Richard Chin -->
 			</div>
 			<input type="checkbox" id="css-toggle-menu" name="css-toggle-menu"> 
 			<ul class="main">
@@ -62,18 +56,18 @@
 			<img class="mobileShow" src="images/richardHeadshot.jpg" alt="">
 			<h1>About</h1>
 			<p>Hi, I'm Richard, a Front-End Web Developer and Graphic Designer based in Toronto. I enjoy creating interactive websites and web apps written with clean, DRY code that are designed with pixel perfection.
-			<p>Prior to becoming a web developer at <a class="underline" href="http://www.hackeryou.com" target="_blank">HackerYou</a>, I was a Marketing Design Lead at <a class="underline" href="http://www.jonasclub.com" target="_blank">Jonas Club Software</a>, where I collaborated with multiple departments to establish new ways to communicate with clients, develop relationships, reinforce brand image and drive sales revenue.</p>
-			<!-- <p>I was responsible for the design, development and execution of deliverables including email marketing campaigns, print advertisements, tradeshow displays and corporate websites.</p> -->
-			<p>When I'm not near a computer, I'm most likely out on an adventure with our puppy, Harley.</p>
-
+			<p>Currently, I'm a web developer at <a class="underline" href="https://www.kirasystems.com" target="_blank">Kira Systems</a> where I take ownership of all digital marketing assets including the corporate website, email marketing and blogs.</p>
+			<p>Prior to taking the <a class="underline" href="http://hackeryou.com/web-development-immersive" target="_blank">Web Development Immersive</a> at <a class="underline" href="http://www.hackeryou.com" target="_blank">HackerYou</a>, I was a Marketing Design Lead at <a class="underline" href="http://www.jonasclub.com" target="_blank">Jonas Club Software</a>, where I collaborated with multiple departments to establish new ways to communicate with clients, develop relationships, reinforce brand image and drive sales revenue.</p>
+			<p>When I'm not near a computer, I'm most likely out on an adventure with our <span class="linethrough">puppy</span> dog, Harley.</p>
 			
 			<div class="aboutCTA">
 				<div class="aboutCtaIcons">
 					<a href="https://www.linkedin.com/in/chinrichard/" target="_blank"><i class="fab fa-linkedin" alt="Richard Chin's LinkedIn Profile" title="Richard Chin's LinkedIn Profile"></i></a><a href="https://twitter.com/ricch13" target="_blank"><i class="fab fa-twitter" alt="Follow Richard Chin on Twitter" title="Follow Richard Chin on Twitter"></i></a><a href="https://www.instagram.com/ricch13/" target="_blank"><i class="fab fa-instagram" alt="Follow Richard Chin on Instagram" title="Follow Richard Chin on Instagram"></i></a><a href="https://github.com/ricch" target="_blank"><i class="fab fa-github" alt="Follow Richard Chin on Github" title="Follow Richard Chin on Github"></i></a>
 				</div>
-				<div class="aboutCtaGetInTouch">
-					<a href="javascript:void(0)" onclick="goToByScroll('anchor_contact')"><button class="round">Get in touch</button></a>
-				</div>
+			</div>
+			<div class="cta">
+				<a href="javascript:void(0)" onclick="goToByScroll('anchor_contact')"><button class="round">Get in touch</button></a>
+				<a href="/RichardChin-Resume.pdf" target="_blank"><button class="round">View Resume</button></a>
 			</div>
 		</div>
 	</div>		
@@ -91,11 +85,17 @@
 				<i class="skillsIndiv devicon-css3-plain"><br><span>CSS3</span></i>
 				<i class="skillsIndiv devicon-javascript-plain"><br><span>JavaScript</span></i>
 				<i class="skillsIndiv devicon-jquery-plain"><br><span>jQuery</span></i>
-				<i class="skillsIndiv devicon-sass-original"><br><span>Sass</span></i>
 			</div>
 			<div class="skills">
+				<i class="skillsIndiv devicon-sass-original"><br><span>Sass</span></i>
+				<div class="skillsIndiv kentico">
+					<img src="images/logoHugo.svg" alt=""><br>
+					<span class="textKentico">Hugo SSG</span>
+				</div>
 				<i class="skillsIndiv devicon-gulp-plain"><br><span>Gulp</span></i>
 				<i class="skillsIndiv devicon-github-plain"><br><span>Github</span></i>
+			</div>
+			<div class="skills">
 				<i class="skillsIndiv devicon-react-original"><br><span>React JS</span></i>
 				<div class="skillsIndiv">
 					<img src="images/logoFirebase.svg" alt=""><br>
@@ -105,6 +105,7 @@
 					<img src="images/logoKentico.svg" alt=""><br>
 					<span class="textKentico">Kentico CMS</span>
 				</div>
+				<i class="skillsIndiv devicon-wordpress-plain"><br><span>Wordpress</span></i>
 			</div>
 		</div>
 		<div class="designSkills">
@@ -122,6 +123,9 @@
 				<div>	
 					<img src="images/logoID.svg" alt=""><br><span>InDesign</span>
 				</div>
+				<div>
+					<img src="images/logoSketch.svg" alt=""><br><span>Sketch App</span>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -131,11 +135,6 @@
 <section class="sectionPortfolio">
 	<div class="wrapper">
 		<h1>Latest <strong>work</strong></h1>
-		<!-- <div class="portfolioNav mobileHide">
-			<div class="portfolioNavItem"><a href="javascript:void(0)" onclick="goToByScroll('anchor_puggle')"><img src="images/projectPuggle.svg" alt="The Puggle Is Real - Dog Walking App" title="The Puggle Is Real - Dog Walking App"><br><span class="portfolioNavTitle">The Puggle is Real</span></a></div>
-			<div class="portfolioNavItem"><a href="javascript:void(0)" onclick="goToByScroll('anchor_subcrawl')"><img src="images/projectSubcrawl.svg" alt="Subcrawl App" title="Subcrawl App"><br><span class="portfolioNavTitle">Subcrawl</span></a></div>
-			<div class="portfolioNavItem"><a href="javascript:void(0)" onclick="goToByScroll('anchor_hangman')"><img src="images/projectHangman.svg" alt="HackerYou Hangman" title="HackerYou Hangman"><br><span class="portfolioNavTitle">HackerYou Hangman</span></a></div>
-		</div> -->
 	</div>
 	<div class="wrapper portfolio">
 		<a class="anchor" id="anchor_puggle" name="anchor_puggle"></a>
@@ -151,12 +150,9 @@
 				<p>A web app that assists dog owners who are busy with their day-to-day lives and are in search of trustworthy and responsible dog walkers in their area.</p>
 				<p>Built with React JS, members can register and join the online community as a 'dog walker' or as a 'dog owner'. Inputted data and media are stored into Firebase, where it is later called for display. Utilizing the Google Maps API, markers are added to pinpoint the locations of all members within the local vicinity of the user.</p>
 			</div>
-			<!-- <div class="tools">
-				<div class="porfolioTools"><span>sass</span><span>html5</span><span>javascript</span><span>react js</span><span>gulp</span><span>firebase</span><span>google maps api</span></div>
-			</div> -->
 			<div class="cta">
 				<a href="https://github.com/ricch/Dog-Walker" target="_blank"><button class="round">View on GitHub</button></a>
-				<a href="https://the-puggle-is-real.firebaseapp.com/" target="_blank"><button class="round">View LIVE on Firebase</button></a>
+				<a href="https://the-puggle-is-real.firebaseapp.com/" target="_blank"><button class="round">View LIVE</button></a>
 			</div>
 		</div>
 	</div>
@@ -173,7 +169,7 @@
 			<div>
 				<p>Had a long day at work? Need a drink on your commute ride home? How about eight?</p>
 				<p>This interactive web app uses JavaScript and jQuery to communicate with the Yelp API to grab the closest residing bars to every TTC subway station stop along your desired route, between your starting and final destination.</p>
-				<p><em>* Please drink responsibly. Don't forget to buy a TTC day pass or use your Presto card, otherwise it'll be a 'hella' expensive commute.</em></p>
+				<p><em>* Please drink responsibly. Don't forget to buy a TTC day pass or use your Presto card, otherwise it'll be an expensive commute</em> <i class="fal fa-smile"></i>.</p>
 			</div>
 			
 			<div class="cta">
@@ -193,7 +189,7 @@
 				<h3>Javascript, jQuery, HTML5, CSS3, Sass</h3>
 			</div>
 			<div>
-				<p>An oldie but a goodie &mdash; your traditional Hangman game but with HackerYou Staff <em>(and pups!)</em></p>
+				<p>An oldie but a goodie &mdash; your traditional Hangman game but with HackerYou staff names <em>(and pups!)</em></p>
 				<p>After just a week of learning JavaScript, <a class="underline" href="http://www.matthewjparris.com/" target="_blank">Matthew Parris</a> and I collaborated and applied our existing knowledge of JavaScript <em>(arrays, math.randoms, splits, lengths, for-loops, appends, index-ofs, etc)</em> to create this fun, interactive game.</p>
 			</div>
 
@@ -206,21 +202,20 @@
 	<div class="wrapper portfolio">
 		<a class="anchor" id="anchor_book" name="anchor_book"></a>
 		<div class="portfolioImg wow fadeInRight" data-wow-delay=".2s">
-			<img src="images/portfolioBookIsAlwaysBetter.png" alt="The Book Is Always Better - API Web app" title="The Book Is Always Better - API Web App">
+			<img src="images/portfolioJonasSoftware.png" alt="Jonas Software - Website" title="Jonas Software - Website">
 		</div>
 		<div class="portfolioDesc">
 			<div>
-				<h2>The Book Is Always Better</h2>
-				<h3>Google Books API, Movie DB API, Javascript, jQuery, HTML5, CSS3, Sass, GitHub</h3>
+				<h2>Jonas Software <br>Website Redesign</h2>
+				<h3>HTML5, CSS3, Photoshop, Illustrator, Responsive</h3>
 			</div>
 			<div>
-				<p>Find a book that matches your favorite movie and figure out how many days it would take to read the book based on your average reading speed.</p>
-				<p>Collaborating over GitHub with <a class="underline" href="http://milenadjokic.com/" target="_blank">Milena Djokic</a>, <a class="underline" href="http://jonclkwok.com/" target="_blank">Jon Kwok</a> and <a class="underline" href="http://beckah.moscuzza.ca/" target="_blank">Beckah Moscuzza</a>, we scoured the Movie DB and Google Book API to find how many pages your favourite movie was in a book format. Using a timer, we would calculate your average reading speed and based on your available daily free time, determine how many days it would take to complete the book.</p>
+				<p><a href="http://jonassoftware.com/" target="_blank">Jonas Software</a> owns and operates over 50 independently managed software companies around the world. With roots formed in the club management and construction markets, Jonas Software has grown extensively in over 15 vertical markets. Jonas Software is an operating group of <a href="http://www.csisoftware.com/" target="_blank">Constellation Software Inc</a>, one of North America’s largest and most respected software companies.</p>
+				<p>With rapidly evolving web technologies and design trends, it was imperative to stay in the forefront as a modern technology company. A website redesign was greatly needed for a stale website that was only four years old. A new brand was to be re-established and the company’s goals had to be made abundantly clear &mdash; Jonas Software is in the business of acquiring and growing businesses.</p>
 			</div>
 
 			<div class="cta">
-				<a href="https://github.com/TeamQuattro/Project5" target="_blank"><button class="round">View on GitHub</button></a>
-				<a href="https://teamquattro.github.io/Project5/" target="_blank"><button class="round">View LIVE</button></a>
+				<a href="http://jonassoftware.com/" target="_blank"><button class="round">View LIVE</button></a>
 			</div>			
 		</div>
 	</div>	
@@ -233,41 +228,44 @@
 			<div class="fact wow fadeInUp">
 				<i class="fal fa-camera-retro"></i>
 				<h3>Photography<br>Enthusiast</h3>
-				<p>Everything I need for life's adventures:<br>
-				&bull; Nikon d7100<br>
-				&bull; GoPro<br>
-				&bull; DJI Mavic Pro</p>
+				<p>Everything I need for life's adventures:</p>
+				<ul>
+					<li>Nikon d7100</li>
+					<li>GoPro</li>
+					<li>DJI Mavic Pro</li>
+				</ul>
 			</div>
 			<div class="fact wow fadeInUp" data-wow-delay=".1s">
 				<i class="fal fa-paw"></i>
 				<h3>Dog<br>Lover</h3>
-				<p>Recently expanded our family to include Harley, our crossbreed puppy: <br>
-				&bull; Rottweiler<br>
-				&bull; Husky<br>
-				&bull; German Shepherd<br>
-				&bull; Australian Shepherd</p>
+				<p>Recently expanded our family to include Harley, our crossbreed puppy:</p>
+				<ul>
+					<li>&frac14; Rottweiler</li>
+					<li>&frac14; Husky</li>
+					<li>&frac14; German Shepherd</li>
+					<li>&frac14; Australian Shepherd</li>
+				</ul>
 			</div>
 			<div class="fact wow fadeInUp" data-wow-delay=".2s">
 				<i class="fal fa-plane"></i>
 				<h3>Frequent<br>Flyer Miles</h3>
-				<p><strong>2017:</strong><br>
-				&bull; Joshua Tree, Sequoia, Kings Canyon, Yosemite<br>
-				<strong>2016:</strong><Br>
-				&bull; Road trip to Nova Scotia, New Brunswick, PEI.<br>
-				&bull; E. Caribbean Cruise.<br>
-				<strong>2015:</strong><br>
-				&bull; London &amp; Scotland.<br>
-				&bull; Grand Canyon, Antelope Canyon, Monument Valley, Bryce Canyon, Zion.</p>
+				<ul>
+					<li>Joshua Tree, Sequoia, Kings Canyon, Yosemite</li>
+					<li> Road trip to Nova Scotia, New Brunswick, PEI.</li>
+					<li> E. Caribbean Cruise.</li>
+					<li> London &amp; Scotland.</li>
+					<li> Grand Canyon, Antelope Canyon, Monument Valley, Bryce Canyon, Zion.</li>
+				</ul>
 			</div>
 			<div class="fact wow fadeInUp" data-wow-delay=".3s">
 				<i class="fal fa-utensils-alt"></i>
 				<h3>Wannabe<br>Chef</h3>
-				<p>I enjoy home cooked food, and on occasion, checking out new local restaurants on Yelp.</p>
+				<p>I enjoy home cooked food, sous-viding steaks, weekend bbq-ing and on occasion, checking out new cuisines and local restaurants on Yelp.</p>
 			</div>
 			<div class="fact wow fadeInUp" data-wow-delay=".4s">
 				<i class="fal fa-heart"></i>
 				<h3>Hockey<br>Fan</h3>
-				<p>I've been bleeding blue and white ever since the Potvin era > Cujo era > Eagle era .. we'll skip everything in between .. and now the Freddy era.</p>
+				<p>I've been bleeding blue and white ever since the Potvin era > Cujo era > Eagle era .. we'll skip everything in between .. and now the Freddy era <em>(oh, and that matthews kid)</em>.</p>
 			</div>
 		</div>
 	</div>
@@ -313,8 +311,8 @@
 	<div class="footerMid">
 		<div class="wrapper">
 			<div>
-				<p>&copy; 2017 Richard Chin. All Rights Reserved.<br>
-				Toronto skyline photo by <!-- <a href="https://unsplash.com/@fiveamstories" target="_blank">Alex Shutin</a> or  --><a class="underline" href="https://unsplash.com/@yourturn" target="_blank">Illia Cherednychenko</a></p>
+				<p>&copy; 2018 Richard Chin. All Rights Reserved.<br>
+				Toronto skyline photo by <a class="underline" href="https://unsplash.com/@yourturn" target="_blank">Illia Cherednychenko</a>. Portrait photo by <a class="underline" href="http://danamanoli.com/" target="_blank">Dana Manoli</a>.</p>
 			</div>
 			<div>
 				<div class="aboutCtaIcons">
@@ -363,8 +361,6 @@
 		});
 	});
 	</script>
-
-
 
 </body>
 </html>

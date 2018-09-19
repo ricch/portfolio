@@ -6,6 +6,10 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: right;
+	@include respond-to('large') {
+		padding: 50px 0;
+		background-position: 70%;
+	}
 	@include respond-to('medium') {
 		background-image: none;
 		padding: 30px 10px;
